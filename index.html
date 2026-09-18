@@ -3,19 +3,235 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Jarvis Content Publisher</title>
+
+  <!-- Use the same icon submitted to TikTok -->
+  <link rel="icon" type="image/png" href="app-icon.png">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0d14;
+      color: #f5f5f7;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid #252936;
+      padding: 20px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+    }
+
+    .hero {
+      padding: 90px 0 70px;
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #b8bdca;
+      max-width: 700px;
+    }
+
+    section {
+      padding: 60px 0;
+      border-top: 1px solid #202431;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      color: #b8bdca;
+      max-width: 780px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #121620;
+      border: 1px solid #252a38;
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 15px;
+    }
+
+    footer {
+      padding: 35px 0;
+      border-top: 1px solid #252936;
+      color: #969cab;
+    }
+
+    footer a {
+      color: #c2adff;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Jarvis Content Publisher</h1>
 
-  <p>Jarvis Content Publisher is a personal desktop application
-  for preparing, managing, scheduling and publishing video content
-  to social media accounts authorized by the user.</p>
+<header>
+  <div class="container">
+    <div class="brand">
+      <img src="app-icon.png" alt="Jarvis logo">
+      <span>Jarvis Content Publisher</span>
+    </div>
+  </div>
+</header>
 
-  <p>The application uses official authorization mechanisms such as
-  OAuth and does not publish content to accounts without authorization.</p>
+<main>
 
-  <p><a href="privacy.html">Privacy Policy</a></p>
-  <p><a href="terms.html">Terms of Service</a></p>
+  <div class="container">
+    <div class="hero">
+      <h1>Manage and publish your video content with Jarvis.</h1>
+
+      <p>
+        Jarvis Content Publisher is a desktop application designed to help
+        users prepare, organize, manage and publish their own video content
+        to authorized social media accounts.
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <h2>What is Jarvis?</h2>
+
+      <p>
+        Jarvis helps creators manage their video publishing workflow from
+        preparation to publication. Users maintain control over their accounts
+        and explicitly authorize supported social media integrations.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2>Features</h2>
+
+      <div class="features">
+
+        <div class="card">
+          <h3>Content Management</h3>
+          <p>
+            Organize and manage video content before publication.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Video Preparation</h3>
+          <p>
+            Prepare video content and publishing information in one workflow.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Social Publishing</h3>
+          <p>
+            Publish content to supported social platforms after account
+            authorization.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Secure Authorization</h3>
+          <p>
+            Jarvis uses official authorization mechanisms such as OAuth
+            and does not access accounts without user permission.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2>TikTok Integration</h2>
+
+      <p>
+        Jarvis integrates with TikTok through official TikTok authorization
+        and content publishing APIs. The user connects and authorizes their
+        own TikTok account before Jarvis can perform any publishing action.
+      </p>
+
+      <br>
+
+      <p>
+        Jarvis does not publish content to TikTok accounts without explicit
+        authorization from the account owner.
+      </p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+
+    <p style="margin-top:20px;">
+      © 2026 Jarvis Content Publisher
+    </p>
+
+  </div>
+</footer>
+
 </body>
 </html>
